@@ -32,6 +32,8 @@ Ejemplo en Ubuntu Server:
 
 ![Imagen](images/1.png)
 
+![Imagen](images/2.png)
+
 3. Preparar directorio de Wordpress:
 * Creamos el directorio srv/www para almacenar archivos de nuestro sitio web servido por Apache:
 ````
@@ -46,8 +48,6 @@ sudo chown www-data: /srv/www
 curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
 ````
 Ejemplo en Ubuntu Server:
-
-![Imagen](images/2.png)
 
 ![Imagen](images/3.png)
 
