@@ -117,7 +117,7 @@ Ejemplo en Ubuntu Server:
 
 
 6. Configurar Wordpress para que se conecte a la base de datos:
-* Copiamos el archivo de muestra de configuración wp-config-sample.php que viene incluido con wordpress a wp-config.php, como usuario www-data (que es el propietario del sitio):
+* Copiamos el archivo de muestra de configuración wp-config-sample.php que viene incluido con WordPress a wp-config.php, como usuario www-data (que es el propietario del sitio):
 ````
 sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
 ````
