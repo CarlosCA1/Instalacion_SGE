@@ -2,7 +2,9 @@
 
 Para realizarla he seguido [esta guía](https://ubuntu.com/tutorials/install-and-configure-wordpress).
 
-1. Instalar Ubuntu Server
+
+1. Instalar Ubuntu Server en una máquina virtual
+
 
 2. Instalar dependencias:
 
@@ -34,6 +36,7 @@ Ejemplo en Ubuntu Server:
 
 ![Imagen](images/2.png)
 
+
 3. Preparar directorio de Wordpress:
 * Creamos el directorio srv/www para almacenar archivos de nuestro sitio web servido por Apache:
 ````
@@ -50,6 +53,7 @@ curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
 Ejemplo en Ubuntu Server:
 
 ![Imagen](images/3.png)
+
 
 4. Configurar Apache para WordPress:
 * Creamos el siguiente archivo de configuración en /etc/apache2/sites-available/:
@@ -111,8 +115,9 @@ Ejemplo en Ubuntu Server:
 
 ![Imagen](images/7.png)
 
+
 6. Configurar Wordpress para que se conecte a la base de datos:
-* Copiamos el archivo de muestra de configuración wp-config-sample.php a wp-config.php, como usuario www-data (que es el propietario del sitio):
+* Copiamos el archivo de muestra de configuración wp-config-sample.php que viene incluido con wordpress a wp-config.php, como usuario www-data (que es el propietario del sitio):
 ````
 sudo -u www-data cp /srv/www/wordpress/wp-config-sample.php /srv/www/wordpress/wp-config.php
 ````
@@ -125,6 +130,7 @@ sudo -u www-data sed -i 's/password_here/<your-password>/' /srv/www/wordpress/wp
 Ejemplo en Ubuntu Server:
 
 ![Imagen](images/8.png)
+
 
 7. Configurar WordPress:
 
