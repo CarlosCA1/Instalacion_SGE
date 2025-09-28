@@ -30,7 +30,7 @@ sudo apt install apache2 \
 
 Ejemplo en Ubuntu Server:
 
-![Imagen](images/1.PNG)
+![Imagen](images/1.png)
 
 3. Preparar directorio de Wordpress:
 * Creamos el directorio srv/www para almacenar archivos de nuestro sitio web servido por Apache:
@@ -47,9 +47,9 @@ curl https://wordpress.org/latest.tar.gz | sudo -u www-data tar zx -C /srv/www
 ````
 Ejemplo en Ubuntu Server:
 
-![Imagen](images/2.PNG)
+![Imagen](images/2.png)
 
-![Imagen](images/3.PNG)
+![Imagen](images/3.png)
 
 4. Configurar Apache para WordPress:
 * Creamos el siguiente archivo de configuración en /etc/apache2/sites-available/:
@@ -88,7 +88,7 @@ sudo service apache2 reload
 ````
 Ejemplo en Ubuntu Server:
 
-![Imagen](images/5.PNG)
+![Imagen](images/5.png)
 
 
 5. Configurar la base de datos:
@@ -109,7 +109,7 @@ quit
 ````
 Ejemplo en Ubuntu Server:
 
-![Imagen](images/7.PNG)
+![Imagen](images/7.png)
 
 6. Configurar Wordpress para que se conecte a la base de datos:
 * Copiamos el archivo de muestra de configuración wp-config-sample.php a wp-config.php, como usuario www-data (que es el propietario del sitio):
@@ -124,7 +124,7 @@ sudo -u www-data sed -i 's/password_here/<your-password>/' /srv/www/wordpress/wp
 ````
 Ejemplo en Ubuntu Server:
 
-![Imagen](images/8.PNG)
+![Imagen](images/8.png)
 
 7. Configurar WordPress:
 
@@ -132,6 +132,6 @@ Ejemplo en Ubuntu Server:
 * Introducimos un nombre para el sitio, nombre de usuario, contraseña y un correo electrónico.
 * Ya podemos iniciar sesión en Wordpress y personalizar nuestro sitio.
 
-![Imagen](images/9.PNG)
+![Imagen](images/9.png)
 
-![Imagen](images/10.PNG)
+![Imagen](images/10.png)
